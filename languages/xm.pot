@@ -1,0 +1,217 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: XM\n"
+"POT-Creation-Date: 2016-04-18 14:03+0200\n"
+"PO-Revision-Date: 2016-04-18 14:03+0200\n"
+"Last-Translator: Niklas Brunberg <niklas@lynks.se>\n"
+"Language-Team: Niklas Brunberg <niklas@lynks.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: xm.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-xm-admin-metaboxes.php:80
+msgid "Additional Info"
+msgstr ""
+
+#: admin/class-xm-admin.php:124
+msgctxt "Post Type General Name"
+msgid "User Stories"
+msgstr ""
+
+#: admin/class-xm-admin.php:125
+msgctxt "Post Type Singular Name"
+msgid "User Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:126
+msgid "User Stories"
+msgstr ""
+
+#: admin/class-xm-admin.php:127 admin/class-xm-admin.php:151
+msgid "User Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:128
+msgid "Story Archives"
+msgstr ""
+
+#: admin/class-xm-admin.php:129 admin/class-xm-admin.php:176
+msgid "Parent Item:"
+msgstr ""
+
+#: admin/class-xm-admin.php:130
+msgid "All User Stories"
+msgstr ""
+
+#: admin/class-xm-admin.php:131
+msgid "Add New User Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:132 admin/class-xm-admin.php:179
+msgid "Add New"
+msgstr ""
+
+#: admin/class-xm-admin.php:133
+msgid "New Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:134
+msgid "Edit Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:135
+msgid "Update Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:136
+msgid "View Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:137
+msgid "Search Story"
+msgstr ""
+
+#: admin/class-xm-admin.php:138 admin/class-xm-admin.php:185
+msgid "Not found"
+msgstr ""
+
+#: admin/class-xm-admin.php:139 admin/class-xm-admin.php:186
+msgid "Not found in Trash"
+msgstr ""
+
+#: admin/class-xm-admin.php:140 admin/class-xm-admin.php:187
+msgid "Featured Image"
+msgstr ""
+
+#: admin/class-xm-admin.php:141 admin/class-xm-admin.php:188
+msgid "Set featured image"
+msgstr ""
+
+#: admin/class-xm-admin.php:142 admin/class-xm-admin.php:189
+msgid "Remove featured image"
+msgstr ""
+
+#: admin/class-xm-admin.php:143 admin/class-xm-admin.php:190
+msgid "Use as featured image"
+msgstr ""
+
+#: admin/class-xm-admin.php:144
+msgid "Insert into story"
+msgstr ""
+
+#: admin/class-xm-admin.php:145
+msgid "Uploaded to this story"
+msgstr ""
+
+#: admin/class-xm-admin.php:146
+msgid "Story list"
+msgstr ""
+
+#: admin/class-xm-admin.php:147
+msgid "Story list navigation"
+msgstr ""
+
+#: admin/class-xm-admin.php:148
+msgid "Filter story list"
+msgstr ""
+
+#: admin/class-xm-admin.php:171
+msgctxt "Post Type General Name"
+msgid "Jobs"
+msgstr ""
+
+#: admin/class-xm-admin.php:172
+msgctxt "Post Type Singular Name"
+msgid "Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:173
+msgid "Jobs"
+msgstr ""
+
+#: admin/class-xm-admin.php:174 admin/class-xm-admin.php:198
+msgid "Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:175
+msgid "Job Archives"
+msgstr ""
+
+#: admin/class-xm-admin.php:177
+msgid "All Jobs"
+msgstr ""
+
+#: admin/class-xm-admin.php:178
+msgid "Add New Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:180
+msgid "New Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:181
+msgid "Edit Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:182
+msgid "Update Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:183
+msgid "View Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:184
+msgid "Search Job"
+msgstr ""
+
+#: admin/class-xm-admin.php:191
+msgid "Insert into job"
+msgstr ""
+
+#: admin/class-xm-admin.php:192
+msgid "Uploaded to this job"
+msgstr ""
+
+#: admin/class-xm-admin.php:193
+msgid "Job list"
+msgstr ""
+
+#: admin/class-xm-admin.php:194
+msgid "Job list navigation"
+msgstr ""
+
+#: admin/class-xm-admin.php:195
+msgid "Filter job list"
+msgstr ""
+
+#: admin/class-xm-admin.php:237
+msgid "XM Custom Styles"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "XM"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Provides content types and controls for XM Reality"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Niklas Brunberg"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://lynks.se"
+msgstr ""
