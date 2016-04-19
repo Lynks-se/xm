@@ -100,21 +100,25 @@ class XM_Public {
 
 	}
 
-}
+	/**
+	 * Add Shortcode for the public-facing side of the site.
+	 *
+	 * @since    1.1.0
+	 */
+	public function xm_shortcode_section( $atts , $content = null ) {
 
-// Add Shortcode
-function xm_shortcode_section( $atts , $content = null ) {
+		// Attributes
+		extract( shortcode_atts(
+			array(
+				'color' => '#333333',
+				'background_color' => '#ffffff',
+			), $atts )
+		);
 
-	// Attributes
-	extract( shortcode_atts(
-		array(
-			'color' => '#333333',
-			'background_color' => '#ffffff',
-		), $atts )
-	);
+		$prefix = '<section style="color: ' . $atts['color'] . '; background-color: ' . $atts['background_color'] . ';">';
+		$suffix = '</section>';
 
-	$prefix = '<section style="color: ' . $atts['color'] . '; background-color: ' . $atts['background_color'] . ';">';
-	$suffix = '</section>';
+		return $prefix . $content . $suffix;
 
-	return $prefix . $content . $suffix;
+	}
 }

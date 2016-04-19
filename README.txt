@@ -18,5 +18,8 @@ Custom WordPress plugin aimed at XMReality to provide custom functionality.
 
 == Changelog ==
 
+= 1.1 =
+Moved shortcodes into their proper places.
+
 = 1.0 =
 Initial release.
