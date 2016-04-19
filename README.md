@@ -13,11 +13,9 @@
 
 **License URI:** @todo Decide with customer
 
-A custom WordPress plugin for XMReality to provide specialised functionality.
-
 ## Description
 
-@todo
+A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
