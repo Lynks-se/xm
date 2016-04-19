@@ -19,7 +19,7 @@ A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
-# 1.1.1
+### 1.1.1
  * Updated README.txt to README.md (markdown)
 
 ### 1.1
