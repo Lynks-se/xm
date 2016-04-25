@@ -121,15 +121,18 @@ class XM_Admin_Metaboxes {
 	 * @since 		1.0.0
 	 * @access 		public
 	 * @return 		array 		Metabox fields and types
+	 *
+	 * @since 		1.2.0
+	 * @param 		string 			$post_type 		Post type of field info to return.
 	 */
-	private function get_metabox_fields() {
+	private function get_metabox_fields( $post_type ) {
 
 		$fields = array();
 
-		$fields['xm_story-primary_heading'] = [ 'Primary Heading', 'text' ];
-		$fields['xm_story-button_label']    = [ 'Button Label', 'text' ];
+		$fields['xm_user_stories']['xm_story-primary_heading'] = [ 'Primary Heading', 'text' ];
+		$fields['xm_user_stories']['xm_story-button_label']    = [ 'Button Label', 'text' ];
 
-		return $fields;
+		return $fields[$post_type];
 
 	} // get_metabox_fields()
 
@@ -189,13 +192,13 @@ class XM_Admin_Metaboxes {
 
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) { return $post_id; }
 		if ( ! current_user_can( 'edit_post', $post_id ) ) { return $post_id; }
-		if ( 'xm_user_stories' !== $object->post_type ) { return $post_id; }
+		if ( ! in_array( $object->post_type, [ 'xm_slideshow', 'xm_user_stories' ], true) ) { return $post_id; }
 
 		$nonce_check = $this->check_nonces( $_POST );
 
 		if ( 0 < $nonce_check ) { return $post_id; }
 
-		$metas = $this->get_metabox_fields();
+		$metas = $this->get_metabox_fields( $object->post_type );
 
 		foreach ( $metas as $name => $meta ) {
 
