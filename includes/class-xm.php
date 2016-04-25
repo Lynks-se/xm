@@ -69,7 +69,7 @@ class XM {
 	public function __construct() {
 
 		$this->plugin_name = 'XM';
-		$this->version = '1.1.0';
+		$this->version = '1.1.1';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -182,8 +182,12 @@ class XM {
 		$plugin_metaboxes = new XM_Admin_Metaboxes( $this->plugin_name, $this->get_version() );
 
 		$this->loader->add_action( 'add_meta_boxes', $plugin_metaboxes, 'add_metaboxes' );
+
 		$this->loader->add_action( 'add_meta_boxes_xm_user_stories', $plugin_metaboxes, 'set_meta' );
 		$this->loader->add_action( 'save_post_xm_user_stories', $plugin_metaboxes, 'validate_meta', 10, 2 );
+
+		$this->loader->add_action( 'add_meta_boxes_xm_slideshow', $plugin_metaboxes, 'set_meta' );
+		$this->loader->add_action( 'save_post_xm_slideshow', $plugin_metaboxes, 'validate_meta', 10, 2 );
 
 	} // define_metabox_hooks()
 

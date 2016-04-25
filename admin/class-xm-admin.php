@@ -214,8 +214,56 @@ class XM_Admin {
 			'capability_type'       => 'page',
 		];
 
+		$xm_slideshow_labels = [
+			'name'                  => _x( 'Slides', 'Post Type General Name', 'xm' ),
+			'singular_name'         => _x( 'Slide', 'Post Type Singular Name', 'xm' ),
+			'menu_name'             => __( 'Slides', 'xm' ),
+			'name_admin_bar'        => __( 'Slide', 'xm' ),
+			'archives'              => __( 'Slide Archives', 'xm' ),
+			'parent_item_colon'     => __( 'Parent Item:', 'xm' ),
+			'all_items'             => __( 'All Slides', 'xm' ),
+			'add_new_item'          => __( 'Add New Slide', 'xm' ),
+			'add_new'               => __( 'Add New', 'xm' ),
+			'new_item'              => __( 'New Slide', 'xm' ),
+			'edit_item'             => __( 'Edit Slide', 'xm' ),
+			'update_item'           => __( 'Update Slide', 'xm' ),
+			'view_item'             => __( 'View Slide', 'xm' ),
+			'search_items'          => __( 'Search Slide', 'xm' ),
+			'not_found'             => __( 'Not found', 'xm' ),
+			'not_found_in_trash'    => __( 'Not found in Trash', 'xm' ),
+			'featured_image'        => __( 'Featured Image', 'xm' ),
+			'set_featured_image'    => __( 'Set featured image', 'xm' ),
+			'remove_featured_image' => __( 'Remove featured image', 'xm' ),
+			'use_featured_image'    => __( 'Use as featured image', 'xm' ),
+			'insert_into_item'      => __( 'Insert into slide', 'xm' ),
+			'uploaded_to_this_item' => __( 'Uploaded to this slide', 'xm' ),
+			'items_list'            => __( 'Slide list', 'xm' ),
+			'items_list_navigation' => __( 'Slide list navigation', 'xm' ),
+			'filter_items_list'     => __( 'Filter slide list', 'xm' ),
+		];
+		$xm_slideshow_args = [
+			'label'                 => __( 'Slide', 'xm' ),
+			'labels'                => $xm_slideshow_labels,
+			'supports'              => [ 'title', 'excerpt', 'thumbnail', 'revisions' ],
+			'taxonomies'            => [],
+			'hierarchical'          => false,
+			'public'                => true,
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'menu_position'         => 28,
+			'menu_icon'             => 'dashicons-slides',
+			'show_in_admin_bar'     => true,
+			'show_in_nav_menus'     => true,
+			'can_export'            => true,
+			'has_archive'           => false,
+			'exclude_from_search'   => true,
+			'publicly_queryable'    => true,
+			'capability_type'       => 'post',
+		];
+
 		register_post_type( 'xm_user_stories', $xm_user_stories_args );
 		register_post_type( 'xm_jobs', $xm_jobs_args );
+		register_post_type( 'xm_slideshow', $xm_slideshow_args );
 
 	} // new_custom_post_type_story()
 

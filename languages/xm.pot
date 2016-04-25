@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: XM\n"
-"POT-Creation-Date: 2016-04-18 14:03+0200\n"
+"POT-Creation-Date: 2016-04-25 11:00+0200\n"
 "PO-Revision-Date: 2016-04-18 14:03+0200\n"
 "Last-Translator: Niklas Brunberg <niklas@lynks.se>\n"
 "Language-Team: Niklas Brunberg <niklas@lynks.se>\n"
@@ -15,12 +15,13 @@ msgstr ""
 "X-Poedit-WPHeader: xm.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: admin/class-xm-admin-metaboxes.php:80
+#: admin/class-xm-admin-metaboxes.php:92
 msgid "Additional Info"
 msgstr ""
 
@@ -47,6 +48,7 @@ msgid "Story Archives"
 msgstr ""
 
 #: admin/class-xm-admin.php:129 admin/class-xm-admin.php:176
+#: admin/class-xm-admin.php:223
 msgid "Parent Item:"
 msgstr ""
 
@@ -59,6 +61,7 @@ msgid "Add New User Story"
 msgstr ""
 
 #: admin/class-xm-admin.php:132 admin/class-xm-admin.php:179
+#: admin/class-xm-admin.php:226
 msgid "Add New"
 msgstr ""
 
@@ -83,26 +86,32 @@ msgid "Search Story"
 msgstr ""
 
 #: admin/class-xm-admin.php:138 admin/class-xm-admin.php:185
+#: admin/class-xm-admin.php:232
 msgid "Not found"
 msgstr ""
 
 #: admin/class-xm-admin.php:139 admin/class-xm-admin.php:186
+#: admin/class-xm-admin.php:233
 msgid "Not found in Trash"
 msgstr ""
 
 #: admin/class-xm-admin.php:140 admin/class-xm-admin.php:187
+#: admin/class-xm-admin.php:234
 msgid "Featured Image"
 msgstr ""
 
 #: admin/class-xm-admin.php:141 admin/class-xm-admin.php:188
+#: admin/class-xm-admin.php:235
 msgid "Set featured image"
 msgstr ""
 
 #: admin/class-xm-admin.php:142 admin/class-xm-admin.php:189
+#: admin/class-xm-admin.php:236
 msgid "Remove featured image"
 msgstr ""
 
 #: admin/class-xm-admin.php:143 admin/class-xm-admin.php:190
+#: admin/class-xm-admin.php:237
 msgid "Use as featured image"
 msgstr ""
 
@@ -196,7 +205,77 @@ msgstr ""
 msgid "Filter job list"
 msgstr ""
 
-#: admin/class-xm-admin.php:237
+#: admin/class-xm-admin.php:218
+msgctxt "Post Type General Name"
+msgid "Slides"
+msgstr ""
+
+#: admin/class-xm-admin.php:219
+msgctxt "Post Type Singular Name"
+msgid "Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:220
+msgid "Slides"
+msgstr ""
+
+#: admin/class-xm-admin.php:221 admin/class-xm-admin.php:245
+msgid "Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:222
+msgid "Slide Archives"
+msgstr ""
+
+#: admin/class-xm-admin.php:224
+msgid "All Slides"
+msgstr ""
+
+#: admin/class-xm-admin.php:225
+msgid "Add New Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:227
+msgid "New Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:228
+msgid "Edit Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:229
+msgid "Update Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:230
+msgid "View Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:231
+msgid "Search Slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:238
+msgid "Insert into slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:239
+msgid "Uploaded to this slide"
+msgstr ""
+
+#: admin/class-xm-admin.php:240
+msgid "Slide list"
+msgstr ""
+
+#: admin/class-xm-admin.php:241
+msgid "Slide list navigation"
+msgstr ""
+
+#: admin/class-xm-admin.php:242
+msgid "Filter slide list"
+msgstr ""
+
+#: admin/class-xm-admin.php:285
 msgid "XM Custom Styles"
 msgstr ""
 

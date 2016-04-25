@@ -87,6 +87,18 @@ class XM_Admin_Metaboxes {
 			)
 		);
 
+		add_meta_box(
+			'xm_meta_nonce',
+			apply_filters( $this->plugin_name . '-metabox-title-additional-info', esc_html__( 'Additional Info', 'xm' ) ),
+			array( $this, 'metabox_slideshow' ),
+			'xm_slideshow',
+			'normal',
+			'default',
+			array(
+				'file' => 'slideshow'
+			)
+		);
+
 	} // add_metaboxes()
 
 	/**
@@ -132,6 +144,9 @@ class XM_Admin_Metaboxes {
 		$fields['xm_user_stories']['xm_story-primary_heading'] = [ 'Primary Heading', 'text' ];
 		$fields['xm_user_stories']['xm_story-button_label']    = [ 'Button Label', 'text' ];
 
+		$fields['xm_slideshow']['xm_slideshow-link_text']   = [ 'Link Text', 'text' ];
+		$fields['xm_slideshow']['xm_slideshow-link_url']    = [ 'Link URL', 'text' ];
+
 		return $fields[$post_type];
 
 	} // get_metabox_fields()
@@ -157,6 +172,29 @@ class XM_Admin_Metaboxes {
 		include( plugin_dir_path( __FILE__ ) . 'partials/xm-admin-metabox-' . $params['args']['file'] . '.php' );
 
 	} // metabox()
+
+	/**
+	 * Calls a metabox file specified in the add_meta_box args.
+	 *
+	 * @since 	1.2.0
+	 * @access 	public
+	 * @return 	void
+	 */
+	public function metabox_slideshow( $post, $params ) {
+
+		if ( ! is_admin() ) { return; }
+		if ( 'xm_slideshow' !== $post->post_type ) { return; }
+
+		if ( ! empty( $params['args']['classes'] ) ) {
+
+			$classes = 'repeater ' . $params['args']['classes'];
+
+		}
+
+		include( plugin_dir_path( __FILE__ ) . 'partials/xm-admin-metabox-' . $params['args']['file'] . '.php' );
+
+	} // metabox()
+
 
 	/**
 	 * Sets the class variable $options
