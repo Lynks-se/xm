@@ -76,7 +76,7 @@ class XM_Admin_Metaboxes {
 		// add_meta_box( $id, $title, $callback, $screen, $context, $priority, $callback_args );
 
 		add_meta_box(
-			'xm_meta_info',
+			'xm_meta_nonce',
 			apply_filters( $this->plugin_name . '-metabox-title-additional-info', esc_html__( 'Additional Info', 'xm' ) ),
 			array( $this, 'metabox' ),
 			'xm_user_stories',
@@ -114,7 +114,7 @@ class XM_Admin_Metaboxes {
 		$nonces 		= array();
 		$nonce_check 	= 0;
 
-		$nonces[] = 'xm_meta_info';
+		$nonces[] = 'xm_meta_nonce';
 
 		foreach ( $nonces as $nonce ) {
 

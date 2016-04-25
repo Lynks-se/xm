@@ -8,7 +8,7 @@
  * @package 	XM
  * @subpackage 	XM/admin/partials
  */
-wp_nonce_field( $this->plugin_name, 'xm_meta_info' );
+wp_nonce_field( $this->plugin_name, 'xm_meta_nonce' );
 
 $atts = [
 	'description' => '',
