@@ -27,7 +27,7 @@ if (isset($this->meta[$atts['id']][0])) {
 apply_filters( $this->plugin_name . '-field-' . $atts['id'], $atts );
 
 echo '<p>';
-include( plugin_dir_path( __FILE__ ) . $this->plugin_name . '-admin-field-text.php' );
+include( plugin_dir_path( __FILE__ ) . strtolower($this->plugin_name) . '-admin-field-text.php' );
 echo '</p>';
 
 
@@ -48,5 +48,5 @@ if (isset($this->meta[$atts['id']][0])) {
 apply_filters( $this->plugin_name . '-field-' . $atts['id'], $atts );
 
 echo '<p>';
-include( plugin_dir_path( __FILE__ ) . $this->plugin_name . '-admin-field-text.php' );
+include( plugin_dir_path( __FILE__ ) . strtolower($this->plugin_name) . '-admin-field-text.php' );
 echo '</p>';
