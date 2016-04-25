@@ -121,4 +121,20 @@ class XM_Public {
 		return $prefix . $content . $suffix;
 
 	}
+
+	/**
+	 * Remove jQuery migrate from public-facing pages because it is not needed
+	 *
+	 * @since 1.2.1
+	 * @param      WP_Scripts object    $scripts       A WordPress scripts object.
+	 */
+	public function xm_remove_jquery_migrate( WP_Scripts &$scripts ) {
+
+		if ( ! is_admin() ) {
+			$scripts->remove( 'jquery');
+			$scripts->add( 'jquery', false, array( 'jquery-core' ) );
+		}
+
+	}
+
 }
