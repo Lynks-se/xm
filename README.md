@@ -19,6 +19,10 @@ A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
+### 1.2.1
+ * Remove jQuery migrate from public-facing pages because it is not needed
+ * Add a second header field for xm_slideshow
+
 ### 1.2.0
  * Rename new_custom_post_type_story to better conform to plugin naming scheme
  * Allow get_metabox_fields and validate_meta to use and return information on multiple post_types
