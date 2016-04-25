@@ -18,6 +18,7 @@ $atts = [
 	'value'       => '',
 	'class'       => 'widefat',
 	'placeholder' => '',
+	'type'        => 'text',
 ];
 
 if (isset($this->meta[$atts['id']][0])) {
@@ -39,6 +40,7 @@ $atts = [
 	'value'       => '',
 	'class'       => 'widefat',
 	'placeholder' => '',
+	'type'        => 'text',
 ];
 
 if (isset($this->meta[$atts['id']][0])) {
