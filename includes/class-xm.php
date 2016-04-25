@@ -160,7 +160,7 @@ class XM {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
-		$this->loader->add_action( 'init', $plugin_admin, 'new_custom_post_type_story' );
+		$this->loader->add_action( 'init', $plugin_admin, 'xm_custom_post_types' );
 		$this->loader->add_action( 'init', $plugin_admin, 'add_excerpts_to_pages' );
 
 		$this->loader->add_filter( 'tiny_mce_before_init', $plugin_admin, 'xm_insert_formats' );

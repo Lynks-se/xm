@@ -112,13 +112,13 @@ class XM_Admin {
 	}
 
 	/**
-	 * Creates a new custom post type
+	 * Creates custom post types
 	 *
 	 * @since   1.0.0
 	 * @uses    register_post_type()
 	 * @access  public
 	 */
-	public static function new_custom_post_type_story() {
+	public static function xm_custom_post_types() {
 
 		$xm_user_stories_labels = [
 			'name'                  => _x( 'User Stories', 'Post Type General Name', 'xm' ),

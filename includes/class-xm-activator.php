@@ -30,7 +30,7 @@ class XM_Activator {
 	 * @since    1.0.0
 	 */
 	public static function activate() {
-		XM_Admin::new_custom_post_type_story();
+		XM_Admin::xm_custom_post_types();
 	}
 
 }
