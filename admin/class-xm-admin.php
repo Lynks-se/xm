@@ -346,4 +346,68 @@ class XM_Admin {
 
 	}
 
+	/**
+	 * Add and print fields to user profile.
+	 *
+	 * @since   1.3.0
+	 * @param   object    $user       A WordPress user ubject.
+	 */
+	public function xm_extra_user_profile_fields( WP_User $user ) {
+
+		$contactable = get_the_author_meta( 'is_contactable', $user->ID );
+		if ( $contactable ) {
+			$checked = ' checked';
+		} else {
+			$checked = '';
+		}
+
+		print '<h2>' . __( "Extra profile information", 'xm' ) . '</h2>';
+		print '<table class="form-table"><tbody>';
+			print '<tr>';
+				print '<th scope="row">' . __( "Contactable", 'xm' ) . '</th>';
+				print '<td>';
+					print '<label for="is_contactable"><input name="is_contactable" type="checkbox" id="is_contactable" value="1"' . $checked . '> ' . __( "Show on contact page", 'xm' ) . '</label>';
+					print '<p class="description">' . __( "If checked, this user will be shown on the Contacts page", 'xm' ) . '</p>';
+				print '</td>';
+			print '</tr>';
+
+			print '<tr>';
+				print '<th scope="row">' . __( "Title", 'xm' ) . '</th>';
+				print '<td>';
+					print '<label for="user_title"><input name="user_title" type="text" id="user_title" value="' . get_the_author_meta( 'user_title', $user->ID ) . '">';
+				print '</td>';
+			print '</tr>';
+
+			print '<tr>';
+				print '<th scope="row">' . __( "Secondary Phone", 'xm' ) . '</th>';
+				print '<td>';
+					print '<label for="user_phone_2"><input name="user_phone_2" type="tel" id="user_phone_2" value="' . get_the_author_meta( 'user_phone_2', $user->ID ) . '">';
+				print '</td>';
+			print '</tr>';
+
+		print '</tbody></table>';
+
+	}
+
+	/**
+	 * Save fields from xm_extra_user_profile_fields() to user profile.
+	 *
+	 * @since   1.3.0
+	 * @param   integer    $user_id       A WordPress user id.
+	 */
+	public function xm_extra_user_profile_fields_save( $user_id ) {
+
+		if ( current_user_can( 'edit_user' ) ) {
+			$contactable = (isset($_POST['is_contactable'])) ? $_POST['is_contactable'] : 0;
+			update_user_meta( $user_id, 'is_contactable', filter_var( $contactable, FILTER_SANITIZE_NUMBER_INT ) );
+
+			$user_title = (isset($_POST['user_title'])) ? $_POST['user_title'] : '';
+			update_user_meta( $user_id, 'user_title', filter_var( $user_title, FILTER_SANITIZE_STRING ) );
+
+			$user_phone_2 = (isset($_POST['user_phone_2'])) ? $_POST['user_phone_2'] : '';
+			update_user_meta( $user_id, 'user_phone_2', filter_var( $user_phone_2, FILTER_SANITIZE_STRING ) );
+		}
+
+	}
+
 }
