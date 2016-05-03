@@ -19,6 +19,11 @@ A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
+### 1.3.0
+ * Add and print extra fields to user profile for use with contact information
+ * Documentation for TinyMCE shortcode JS
+ * Remove singe_story_template because it is not needed
+
 ### 1.2.1
  * Remove jQuery migrate from public-facing pages because it is not needed
  * Add a second header field for xm_slideshow
