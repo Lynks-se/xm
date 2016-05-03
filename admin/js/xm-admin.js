@@ -2,6 +2,9 @@
 (function( $ ) {
 	'use strict';
 
+	/**
+	 * Adds a shortcode button to the WordPress TinyMCE toolbar.
+	 */
 	tinymce.PluginManager.add('xm_mce_shortcodes_button', function( editor, url ) {
 		editor.addButton( 'xm_mce_shortcodes_button', {
 			text: 'XM Section',
