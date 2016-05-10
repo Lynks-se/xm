@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: XM\n"
-"POT-Creation-Date: 2016-05-03 10:38+0200\n"
+"POT-Creation-Date: 2016-05-10 11:25+0200\n"
 "PO-Revision-Date: 2016-04-18 14:03+0200\n"
 "Last-Translator: Niklas Brunberg <niklas@lynks.se>\n"
 "Language-Team: Niklas Brunberg <niklas@lynks.se>\n"
@@ -301,6 +301,90 @@ msgstr ""
 
 #: admin/class-xm-admin.php:382
 msgid "Secondary Phone"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:86
+msgid "As early as possible (-10)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:87
+msgid "As early as possible (-9)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:88
+msgid "As early as possible (-8)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:89
+msgid "Early (-7)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:90
+msgid "Early (-6)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:91
+msgid "Early (-5)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:92
+msgid "Early (-4)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:93
+msgid "Earlier than neutral (-3)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:94
+msgid "Earlier than neutral (-2)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:95
+msgid "Earlier than neutral (-1)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:96
+msgid "Neutral"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:97
+msgid "After neutral (1)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:98
+msgid "After neutral (2)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:99
+msgid "After neutral (3)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:100
+msgid "Late (4)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:101
+msgid "Late (5)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:102
+msgid "Late (6)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:103
+msgid "Late (7)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:104
+msgid "As late as possible (8)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:105
+msgid "As late as possible (9)"
+msgstr ""
+
+#: admin/partials/xm-admin-metabox-slideshow.php:106
+msgid "As late as possible (10)"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

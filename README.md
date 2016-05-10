@@ -19,6 +19,9 @@ A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
+## 1.3.1
+ * Adds a simple sort order meta field to xm_slideshow
+
 ### 1.3.0
  * Add and print extra fields to user profile for use with contact information
  * Documentation for TinyMCE shortcode JS

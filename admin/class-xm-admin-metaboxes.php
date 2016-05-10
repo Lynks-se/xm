@@ -147,6 +147,7 @@ class XM_Admin_Metaboxes {
 		$fields['xm_slideshow']['xm_slideshow-second_header']    = [ 'Second Header', 'text' ];
 		$fields['xm_slideshow']['xm_slideshow-link_text']   = [ 'Link Text', 'text' ];
 		$fields['xm_slideshow']['xm_slideshow-link_url']    = [ 'Link URL', 'text' ];
+		$fields['xm_slideshow']['xm_slideshow-slide_order']    = [ 'Slide Order', 'select' ];
 
 		return $fields[$post_type];
 
