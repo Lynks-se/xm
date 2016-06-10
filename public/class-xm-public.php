@@ -73,7 +73,8 @@ class XM_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/xm-public.css', array(), $this->version, 'all' );
+		// css/xm-public.css is currently empty and does not need to be sent to the visitor
+		// wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/xm-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -96,7 +97,8 @@ class XM_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/xm-public.js', array( 'jquery' ), $this->version, false );
+		// js/xm-public.js is currently empty and does not need to be sent to the visitor
+		// wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/xm-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 
