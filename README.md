@@ -19,6 +19,12 @@ A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
+## 1.3.2
+ * Files css/xm-public.css and js/xm-public.js are not needed, therefore they are not to be sent to the visitor
+ * New post type: References
+ * Added meta box with extra fields for jobs
+ * Updated translations for version 1.3.2
+
 ## 1.3.1
  * Adds a simple sort order meta field to xm_slideshow
 
