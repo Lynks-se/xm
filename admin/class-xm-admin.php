@@ -261,9 +261,57 @@ class XM_Admin {
 			'capability_type'       => 'post',
 		];
 
+		$xm_references_labels = [
+			'name'                  => _x( 'References', 'Post Type General Name', 'xm' ),
+			'singular_name'         => _x( 'Reference', 'Post Type Singular Name', 'xm' ),
+			'menu_name'             => __( 'References', 'xm' ),
+			'name_admin_bar'        => __( 'Reference', 'xm' ),
+			'archives'              => __( 'Reference Archives', 'xm' ),
+			'parent_item_colon'     => __( 'Parent Item:', 'xm' ),
+			'all_items'             => __( 'All References', 'xm' ),
+			'add_new_item'          => __( 'Add New Reference', 'xm' ),
+			'add_new'               => __( 'Add New', 'xm' ),
+			'new_item'              => __( 'New Reference', 'xm' ),
+			'edit_item'             => __( 'Edit Reference', 'xm' ),
+			'update_item'           => __( 'Update Reference', 'xm' ),
+			'view_item'             => __( 'View Reference', 'xm' ),
+			'search_items'          => __( 'Search Reference', 'xm' ),
+			'not_found'             => __( 'Not found', 'xm' ),
+			'not_found_in_trash'    => __( 'Not found in Trash', 'xm' ),
+			'featured_image'        => __( 'Featured Image', 'xm' ),
+			'set_featured_image'    => __( 'Set featured image', 'xm' ),
+			'remove_featured_image' => __( 'Remove featured image', 'xm' ),
+			'use_featured_image'    => __( 'Use as featured image', 'xm' ),
+			'insert_into_item'      => __( 'Insert into reference', 'xm' ),
+			'uploaded_to_this_item' => __( 'Uploaded to this reference', 'xm' ),
+			'items_list'            => __( 'Reference list', 'xm' ),
+			'items_list_navigation' => __( 'Reference list navigation', 'xm' ),
+			'filter_items_list'     => __( 'Filter reference list', 'xm' ),
+		];
+		$xm_references_args = [
+			'label'                 => __( 'References', 'xm' ),
+			'labels'                => $xm_references_labels,
+			'supports'              => [ 'title', 'editor', 'excerpt', 'thumbnail', 'revisions' ],
+			'taxonomies'            => [],
+			'hierarchical'          => false,
+			'public'                => true,
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'menu_position'         => 28,
+			'menu_icon'             => 'dashicons-thumbs-up',
+			'show_in_admin_bar'     => true,
+			'show_in_nav_menus'     => true,
+			'can_export'            => true,
+			'has_archive'           => false,
+			'exclude_from_search'   => true,
+			'publicly_queryable'    => true,
+			'capability_type'       => 'post',
+		];
+
 		register_post_type( 'xm_user_stories', $xm_user_stories_args );
 		register_post_type( 'xm_jobs', $xm_jobs_args );
 		register_post_type( 'xm_slideshow', $xm_slideshow_args );
+		register_post_type( 'xm_references', $xm_references_args );
 
 	} // new_custom_post_type_story()
 
