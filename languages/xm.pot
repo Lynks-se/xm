@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: XM\n"
-"POT-Creation-Date: 2016-05-10 11:25+0200\n"
+"POT-Creation-Date: 2016-06-15 16:05+0200\n"
 "PO-Revision-Date: 2016-04-18 14:03+0200\n"
 "Last-Translator: Niklas Brunberg <niklas@lynks.se>\n"
 "Language-Team: Niklas Brunberg <niklas@lynks.se>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: xm.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,6 +22,7 @@ msgstr ""
 
 #: admin/class-xm-admin-metaboxes.php:80
 #: admin/class-xm-admin-metaboxes.php:92
+#: admin/class-xm-admin-metaboxes.php:104
 msgid "Additional Info"
 msgstr ""
 
@@ -48,7 +49,7 @@ msgid "Story Archives"
 msgstr ""
 
 #: admin/class-xm-admin.php:129 admin/class-xm-admin.php:176
-#: admin/class-xm-admin.php:223
+#: admin/class-xm-admin.php:223 admin/class-xm-admin.php:270
 msgid "Parent Item:"
 msgstr ""
 
@@ -61,7 +62,7 @@ msgid "Add New User Story"
 msgstr ""
 
 #: admin/class-xm-admin.php:132 admin/class-xm-admin.php:179
-#: admin/class-xm-admin.php:226
+#: admin/class-xm-admin.php:226 admin/class-xm-admin.php:273
 msgid "Add New"
 msgstr ""
 
@@ -86,32 +87,32 @@ msgid "Search Story"
 msgstr ""
 
 #: admin/class-xm-admin.php:138 admin/class-xm-admin.php:185
-#: admin/class-xm-admin.php:232
+#: admin/class-xm-admin.php:232 admin/class-xm-admin.php:279
 msgid "Not found"
 msgstr ""
 
 #: admin/class-xm-admin.php:139 admin/class-xm-admin.php:186
-#: admin/class-xm-admin.php:233
+#: admin/class-xm-admin.php:233 admin/class-xm-admin.php:280
 msgid "Not found in Trash"
 msgstr ""
 
 #: admin/class-xm-admin.php:140 admin/class-xm-admin.php:187
-#: admin/class-xm-admin.php:234
+#: admin/class-xm-admin.php:234 admin/class-xm-admin.php:281
 msgid "Featured Image"
 msgstr ""
 
 #: admin/class-xm-admin.php:141 admin/class-xm-admin.php:188
-#: admin/class-xm-admin.php:235
+#: admin/class-xm-admin.php:235 admin/class-xm-admin.php:282
 msgid "Set featured image"
 msgstr ""
 
 #: admin/class-xm-admin.php:142 admin/class-xm-admin.php:189
-#: admin/class-xm-admin.php:236
+#: admin/class-xm-admin.php:236 admin/class-xm-admin.php:283
 msgid "Remove featured image"
 msgstr ""
 
 #: admin/class-xm-admin.php:143 admin/class-xm-admin.php:190
-#: admin/class-xm-admin.php:237
+#: admin/class-xm-admin.php:237 admin/class-xm-admin.php:284
 msgid "Use as featured image"
 msgstr ""
 
@@ -275,31 +276,101 @@ msgstr ""
 msgid "Filter slide list"
 msgstr ""
 
+#: admin/class-xm-admin.php:265
+msgctxt "Post Type General Name"
+msgid "References"
+msgstr ""
+
+#: admin/class-xm-admin.php:266
+msgctxt "Post Type Singular Name"
+msgid "Reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:267 admin/class-xm-admin.php:292
+msgid "References"
+msgstr ""
+
+#: admin/class-xm-admin.php:268
+msgid "Reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:269
+msgid "Reference Archives"
+msgstr ""
+
+#: admin/class-xm-admin.php:271
+msgid "All References"
+msgstr ""
+
+#: admin/class-xm-admin.php:272
+msgid "Add New Reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:274
+msgid "New Reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:275
+msgid "Edit Reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:276
+msgid "Update Reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:277
+msgid "View Reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:278
+msgid "Search Reference"
+msgstr ""
+
 #: admin/class-xm-admin.php:285
+msgid "Insert into reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:286
+msgid "Uploaded to this reference"
+msgstr ""
+
+#: admin/class-xm-admin.php:287
+msgid "Reference list"
+msgstr ""
+
+#: admin/class-xm-admin.php:288
+msgid "Reference list navigation"
+msgstr ""
+
+#: admin/class-xm-admin.php:289
+msgid "Filter reference list"
+msgstr ""
+
+#: admin/class-xm-admin.php:333
 msgid "XM Custom Styles"
 msgstr ""
 
-#: admin/class-xm-admin.php:364
+#: admin/class-xm-admin.php:412
 msgid "Extra profile information"
 msgstr ""
 
-#: admin/class-xm-admin.php:367
+#: admin/class-xm-admin.php:415
 msgid "Contactable"
 msgstr ""
 
-#: admin/class-xm-admin.php:369
+#: admin/class-xm-admin.php:417
 msgid "Show on contact page"
 msgstr ""
 
-#: admin/class-xm-admin.php:370
+#: admin/class-xm-admin.php:418
 msgid "If checked, this user will be shown on the Contacts page"
 msgstr ""
 
-#: admin/class-xm-admin.php:375
+#: admin/class-xm-admin.php:423
 msgid "Title"
 msgstr ""
 
-#: admin/class-xm-admin.php:382
+#: admin/class-xm-admin.php:430
 msgid "Secondary Phone"
 msgstr ""
 
