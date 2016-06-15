@@ -99,6 +99,19 @@ class XM_Admin_Metaboxes {
 			)
 		);
 
+		add_meta_box(
+			'xm_meta_nonce',
+			apply_filters( $this->plugin_name . '-metabox-title-additional-info', esc_html__( 'Additional Info', 'xm' ) ),
+			array( $this, 'metabox_jobs' ),
+			'xm_jobs',
+			'normal',
+			'default',
+			array(
+				'file' => 'jobs'
+			)
+		);
+
+
 	} // add_metaboxes()
 
 	/**
@@ -149,6 +162,9 @@ class XM_Admin_Metaboxes {
 		$fields['xm_slideshow']['xm_slideshow-link_url']    = [ 'Link URL', 'text' ];
 		$fields['xm_slideshow']['xm_slideshow-slide_order']    = [ 'Slide Order', 'select' ];
 
+		$fields['xm_jobs']['xm_jobs-link_text']   = [ 'Link Text', 'text' ];
+		$fields['xm_jobs']['xm_jobs-link_url']    = [ 'Link URL', 'text' ];
+
 		return $fields[$post_type];
 
 	} // get_metabox_fields()
@@ -197,6 +213,27 @@ class XM_Admin_Metaboxes {
 
 	} // metabox()
 
+	/**
+	 * Calls a metabox file specified in the add_meta_box args.
+	 *
+	 * @since 	1.3.2
+	 * @access 	public
+	 * @return 	void
+	 */
+	public function metabox_jobs( $post, $params ) {
+
+		if ( ! is_admin() ) { return; }
+		if ( 'xm_jobs' !== $post->post_type ) { return; }
+
+		if ( ! empty( $params['args']['classes'] ) ) {
+
+			$classes = 'repeater ' . $params['args']['classes'];
+
+		}
+
+		include( plugin_dir_path( __FILE__ ) . 'partials/xm-admin-metabox-' . $params['args']['file'] . '.php' );
+
+	} // metabox()
 
 	/**
 	 * Sets the class variable $options
@@ -232,7 +269,7 @@ class XM_Admin_Metaboxes {
 
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) { return $post_id; }
 		if ( ! current_user_can( 'edit_post', $post_id ) ) { return $post_id; }
-		if ( ! in_array( $object->post_type, [ 'xm_slideshow', 'xm_user_stories' ], true) ) { return $post_id; }
+		if ( ! in_array( $object->post_type, [ 'xm_slideshow', 'xm_user_stories', 'xm_jobs' ], true) ) { return $post_id; }
 
 		$nonce_check = $this->check_nonces( $_POST );
 

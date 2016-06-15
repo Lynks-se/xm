@@ -69,7 +69,7 @@ class XM {
 	public function __construct() {
 
 		$this->plugin_name = 'XM';
-		$this->version = '1.3.1';
+		$this->version = '1.3.2';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -192,6 +192,9 @@ class XM {
 
 		$this->loader->add_action( 'add_meta_boxes_xm_slideshow', $plugin_metaboxes, 'set_meta' );
 		$this->loader->add_action( 'save_post_xm_slideshow', $plugin_metaboxes, 'validate_meta', 10, 2 );
+
+		$this->loader->add_action( 'add_meta_boxes_xm_jobs', $plugin_metaboxes, 'set_meta' );
+		$this->loader->add_action( 'save_post_xm_jobs', $plugin_metaboxes, 'validate_meta', 10, 2 );
 
 	} // define_metabox_hooks()
 
