@@ -458,4 +458,20 @@ class XM_Admin {
 
 	}
 
+
+	/**
+	 * Allow XMReality to upload additional file types.
+	 *
+	 * @since   1.3.3
+	 * @param   array    $existing_mimes       List of currently allowed mime types.
+	 */
+	public function xm_upload_mimes( $existing_mimes = [] ) {
+
+		$existing_mimes['exe'] = 'application/x-msdownload';
+		$existing_mimes['msi'] = 'application/x-ole-storage';
+
+		return $existing_mimes;
+
+	}
+
 }

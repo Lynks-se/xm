@@ -173,6 +173,8 @@ class XM {
 		$this->loader->add_action( 'edit_user_profile_update', $plugin_admin, 'xm_extra_user_profile_fields_save' );
 		$this->loader->add_action( 'personal_options_update', $plugin_admin, 'xm_extra_user_profile_fields_save' );
 
+		$this->loader->add_filter( 'upload_mimes', $plugin_admin, 'xm_upload_mimes');
+
 	}
 
 	/**

@@ -7,7 +7,7 @@
  * Plugin URI:        
  * Description:       Provides content types and controls for XM Reality
  * Author:            Niklas Brunberg
- * Version:           1.3.1
+ * Version:           1.3.3
  * Author URI:        http://lynks.se
  * License:           
  * License URI:       
