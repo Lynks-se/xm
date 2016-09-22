@@ -19,6 +19,9 @@ A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
+## 1.3.3
+ * Allow XMReality to upload additional file types
+
 ## 1.3.2
  * Files css/xm-public.css and js/xm-public.js are not needed, therefore they are not to be sent to the visitor
  * New post type: References
