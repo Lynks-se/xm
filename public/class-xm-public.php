@@ -134,6 +134,7 @@ class XM_Public {
 
 		if ( ! is_admin() ) {
 			$scripts->remove( 'jquery');
+			$scripts->remove( 'jquery-migrate');
 			$scripts->add( 'jquery', false, array( 'jquery-core' ) );
 		}
 
