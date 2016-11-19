@@ -198,6 +198,9 @@ class XM {
 		$this->loader->add_action( 'add_meta_boxes_xm_jobs', $plugin_metaboxes, 'set_meta' );
 		$this->loader->add_action( 'save_post_xm_jobs', $plugin_metaboxes, 'validate_meta', 10, 2 );
 
+		$this->loader->add_action( 'add_meta_boxes_page', $plugin_metaboxes, 'set_meta' );
+		$this->loader->add_action( 'save_post_page', $plugin_metaboxes, 'validate_meta', 10, 2 );
+
 	} // define_metabox_hooks()
 
 	/**

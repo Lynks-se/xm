@@ -76,6 +76,28 @@ include( plugin_dir_path( __FILE__ ) . strtolower($this->plugin_name) . '-admin-
 echo '</p>';
 
 $atts = [
+	'description' => '',
+	'id'          => 'xm_slideshow-color',
+	'label'       => 'Color',
+	'name'        => 'xm_slideshow-color',
+	'value'       => '#0077b6',
+	'class'       => 'widefat',
+	'placeholder' => '#0077b6',
+	'type'        => 'color',
+];
+
+if (isset($this->meta[$atts['id']][0])) {
+	$atts['value'] = $this->meta[$atts['id']][0];
+}
+
+apply_filters( $this->plugin_name . '-field-' . $atts['id'], $atts );
+
+echo '<p>';
+include( plugin_dir_path( __FILE__ ) . strtolower($this->plugin_name) . '-admin-field-color.php' );
+echo '</p>';
+
+
+$atts = [
 	'description' => 'Defines the order of this slide in the slide show. If two or more slides are at the same order then their publication dates will be used to sort them.',
 	'id'          => 'xm_slideshow-slide_order',
 	'label'       => 'Slide Order',
