@@ -19,6 +19,10 @@ A custom WordPress plugin for XMReality to provide specialised functionality.
 
 ## Changelog
 
+## 1.3.4
+ * Provide a Heading Color view for Pages metabox
+ * Remove jQuery Migrate from front-facing pages
+
 ## 1.3.3
  * Allow XMReality to upload additional file types
 
